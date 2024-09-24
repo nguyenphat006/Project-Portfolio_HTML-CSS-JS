@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Nguyen Dang Phat - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Nguyen Dang Phat</span></a>
+        <a href="#" class="logo">Portfolio</a>
         <ul class="nav-link">
             <li>
                 <a href="#about">About</a>
@@ -26,8 +29,9 @@
         </ul>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <button class="visit-btn">Visit Github</button>
+        <a href="https://github.com/nguyenphat006" target="_blank" >
+            <button class="visit-btn" style="cursor: pointer;">Visit Github</button>
+        </a>
     </header>
 
     <section id="about" class="about">
@@ -37,21 +41,143 @@
                 <div class="text">
                     <h3>Hi, I'm</h3>
                     <h1>Nguyen Dang Phat</h1>
-                    <span>Dev quen</span>
+                    <span>Frontend Developer</span>
                 </div>
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
+                    <a href="">
+                        <div class="btn">Download CV</div>
+                    </a>
+                   <a href=" https://zalo.me/0379157360" target="_blank">
                     <div class="btn">Contact</div>
+                   </a>
                 </div>
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://github.com/nguyenphat006" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook" target="_blank"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" target="_blank"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="experience" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-info">
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Frontend Devlopment</span>
+                    <h3>1 years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Fugiat quod explicabo officiis voluptatem ex nemo ut unde.
+                         Saepe assumenda architecto, porro iusto!
+                    </p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Graphic Design</span>
+                    <h3>1 years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Fugiat quod explicabo officiis voluptatem ex nemo ut unde.
+                         Saepe assumenda architecto, porro iusto!
+                    </p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>System Design</span>
+                    <h3>1 years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Fugiat quod explicabo officiis voluptatem ex nemo ut unde.
+                         Saepe assumenda architecto, porro iusto!
+                    </p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Content Manager</span>
+                    <h3>1 years</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Fugiat quod explicabo officiis voluptatem ex nemo ut unde.
+                         Saepe assumenda architecto, porro iusto!
+                    </p>
+                </div>
+            </div>
+            <img src="/Source/Image/person.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <h2 class="section-title">Recent Project</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="/Source/Image/project-1.png" alt="">
+                <h3>Project X</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui facere iusto reiciendis voluptates hic libero 
+                    ab repellendus minus accusamus voluptatibus eum rerum 
+                    modi molestiae expedita.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Source/Image/project-2.png" alt="">
+                <h3>Project Y</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui facere iusto reiciendis voluptates hic libero 
+                    ab repellendus minus accusamus voluptatibus eum rerum 
+                    modi molestiae expedita.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/Source/Image/project-3.png" alt="">
+                <h3>Project Z</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui facere iusto reiciendis voluptates hic libero 
+                    ab repellendus minus accusamus voluptatibus eum rerum 
+                    modi molestiae expedita.
+                </p>
+                <div class="btn-group">
+                    <div class="btn">Live Demo</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="input-box">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="input">
+                <input type="text" placeholder="example@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="btn">Submit</div>
+        </div>
+       
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#project">Project</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">All Rights Reserved | NGUYEN DANG PHAT</p>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
