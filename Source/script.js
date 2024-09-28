@@ -4,3 +4,4 @@ const navLinks = document.querySelector('.nav-link');
 menuIcon.onclick = () =>{
     navLinks.classList.toggle('active');
 }
+
