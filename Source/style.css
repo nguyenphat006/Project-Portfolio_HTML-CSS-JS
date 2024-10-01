@@ -17,7 +17,6 @@
 background-color: #ffffff; /* Xanh ngọc nhạt nhẹ hơn */
 color: #333;
 }
-  
 
 .row{
     margin: 0 !important;
@@ -170,12 +169,111 @@ section{
 }
 
 
-.section-title{
+.section-title {
     text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 3rem;
+    padding-bottom: 30px;
+  }
+  
+.section-title h2 {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
 }
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+    font-size: 19px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
+.resume-item .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 .experience-info{
     display: flex;
     align-items: center;
