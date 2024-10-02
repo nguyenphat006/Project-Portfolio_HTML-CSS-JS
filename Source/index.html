@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGUYEN DANG PHAT</title>
+    <title>ERICSS - Portfolio</title>
+    <link rel="icon" href="Image/logo-icon1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,16 +15,13 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo"><img src="Image/logo-header.png" alt=""></a>
         <ul class="nav-link">
             <li>
                 <a href="#about">About</a>
             </li>
             <li>
                 <a href="#resume">Resume</a>
-            </li>
-            <li>
-                <a href="#skill">Skill</a>
             </li>
             <li>
                 <a href="#project">Project</a>
@@ -42,12 +40,17 @@
         <div class="col-md-12">
             <section id="about" class="about">
                 <div class="about-container">
-                    <img src="Image/person.jpg" alt="">
                     <div class="info-box">
                         <div class="text">
-                            <h3>Hi, I'm</h3>
+                            <div class="online-status mb-2">
+                                <span class="online-dot"></span>
+                                <p style="margin-bottom: 0 !important;">Online.</p>
+                            </div>
+                            <div class="text-hello">
+                                <h3>Hello,I'm</h3>
+                            </div>                            
                             <h1>Nguyen Dang Phat</h1>
-                            <span>Frontend Developer</span>
+                            <span class="Developer">Frontend Developer</span>
                         </div>
                         <div class="btn-group">
                             <a href="/Source/File/TESTFILE.docx">
@@ -63,9 +66,11 @@
                             <a href="https://www.linkedin.com/in/nguyen-dang-phat-64440829a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
+                    <img src="Image/person.jpg" alt="">
                 </div>
             </section>
-        </div>        
+        </div> 
+             
     </div>
    
     <div class="row">
@@ -85,7 +90,7 @@
                       <div class="resume-item pb-0">
                         <h4>Nguyen Dang Phat</h4>
                         <ul>
-                          <li>Bien Hoa, Dong Nai</li>
+                          <li>Viet Nam, Bien Hoa, Dong Nai</li>
                           <li>+84 379157360</li>
                           <li>nguyendangphat1505@gmail.com</li>
                         </ul>
@@ -129,11 +134,32 @@
             </section>
         </div>
     </div>
-  
+    <div class="row">
+        <div class="col-md-12">
+            <section class="skill" id="skill" style="padding-top: 0;">
+                <div class="section-title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="scroller">
+                            <div class="scroller_inner">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                                <img src="Image/Skill/logo-js.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <section class="project" id="project">
         <h2 class="section-title">Recent Project</h2>
-
         <div class="project-grid">
             <div class="project-card">
                 <img src="/Source/Image/project-1.png" alt="">
