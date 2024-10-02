@@ -27,7 +27,7 @@ header{
     z-index: 999;
 }
 header img{
-    height: 35px;
+    height: 65px;
 }
 .logo{
     color: #fff;
@@ -47,7 +47,7 @@ header img{
 li a{
     position: relative;
     color: #fff;
-    font-weight: 300;
+    font-weight: 600;
 }
 li a::before{
     position: absolute;
@@ -64,9 +64,8 @@ li a:hover::before{
     width: 100%;
 }
 .visit-btn{
-    padding: 0.8rem 1.5rem;
-    border-radius: 3rem;
-    border: 2px solid rgb(255, 255, 255);
+    padding: 0.7rem 1.3rem;
+    border-image: linear-gradient(to right, #3f54be 0%,#e82929 100%) 1;
     font-weight: 500;
     font-size: 1rem;
     color: #fff;
@@ -75,9 +74,10 @@ li a:hover::before{
     background: none;
 }
 .visit-btn:hover{
-    transform: scale(1.03);
-    color: black;
-    background: #fff;
+    transform: scale(1.05);
+    color: #fff;
+    background: linear-gradient(to right, #3f54be 0%,#e82929 100%);
+    border: none;
 }
 #menu-icon{
     font-size: 2rem;
