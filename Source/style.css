@@ -343,22 +343,43 @@ section{
 /*--------------------------------------------------------------
 # Skill
 --------------------------------------------------------------*/
-
-.scroller{
-    max-width: 1000px;
-    margin: 0 auto;
-    outline: 3px solid black;
-}
-.scroller img{
-    height: 80px;
-}
-.scroller_inner{
+.big-card{
+    margin: 0 auto !important;
+    max-width: 930px;
     display: flex;
-    gap: 3rem;
-    padding-block: 1rem;
     align-items: center;
     justify-content: center;
 }
+.mini-card {
+    max-width: 300px;
+    background-color: #414347; /* Màu nền cho card */
+    padding: 40px 0; /* Khoảng cách bên trong card */
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border-radius: 8px; /* Bo góc cho card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    margin-bottom: 15px; /* Khoảng cách phía dưới các card */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mini-card:hover{
+    cursor: pointer;
+    background-color: #2d2d2d;
+}
+.mini-card img{
+    max-width: 70px;
+}
+
+
+
+.mini-card + .mini-card {
+    margin-left: 15px; /* Khoảng cách giữa các card */
+}
+
 
 
 
