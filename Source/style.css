@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Afacad Flux", sans-serif;
     text-decoration: none !important;
     scroll-behavior: smooth;
     list-style: none;
@@ -220,7 +220,7 @@ section{
     display: block;
     width: 40px;
     height: 3px;
-    background: #0563bb;
+    background: linear-gradient(to right, #3050E8 0%, #EB0000 100%);
     bottom: 0;
     left: calc(50% - 20px);
 }
@@ -229,67 +229,117 @@ section{
     margin-bottom: 0;
     font-size: 19px;
 }
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #45505b;
-}
 
-.resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #0563bb;
+
+
+
+
+/* Timeline Css Start  */
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4 {
     position: relative;
-}
-
-.resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #0563bb;
-    margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-    font-size: 16px;
-    background: #f7f8f9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.resume .resume-item ul li {
-    padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-    padding-bottom: 0;
-}
-
-.resume .resume-item::before {
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline-4::after {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
+    width: 3px;
+    background-color: black;
     top: 0;
-    background: #fff;
-    border: 2px solid #0563bb;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline-4 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-4::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -9px;
+    background-color: rgb(60, 60, 60);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left-4 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right-4 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right-4::after {
+    left: -11px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline-4::after {
+      left: 31px;
+    }
+  
+    /* Full-width containers */
+    .timeline-4 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-4::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left-4::after,
+    .right-4::after {
+      left: 18px;
+    }
+  
+    .left-4::before {
+      right: auto;
+    }
+  
+    /* Make all right containers behave like the left ones */
+    .right-4 {
+      left: 0%;
+    }
+  }
+  
+.card{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+    border-radius: 25px;
 }
-.resume-item .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
+.card-body img{
+    height: 60px;
+    padding-right: 10px;
+}  
+
+
+
+
 /*--------------------------------------------------------------
 # Skill
 --------------------------------------------------------------*/
