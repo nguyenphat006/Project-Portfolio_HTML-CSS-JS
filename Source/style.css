@@ -449,12 +449,13 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     gap: 1.5rem;
     border: 2px solid black;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    font-size: 1.3rem;
 }
 .project-card:hover{
     background-color: #373738;
@@ -478,6 +479,9 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
+.project-info > div > span:first-child {
+    font-weight: bold;
+  }
 .input-box{
     display: flex;
     flex-direction: column;
@@ -487,6 +491,7 @@ section{
     gap: 2rem;
     margin-top: 5rem;
 }
+
 .input-box input{
     border-radius: 3rem;
     border: 2px solid black;
