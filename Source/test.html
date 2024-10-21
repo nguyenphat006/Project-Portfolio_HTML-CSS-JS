@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            z-index: -1; /* Đảm bảo nền nằm phía sau nội dung */
+        }
+
+        .dot {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 0, 150, 0.4); /* Màu và độ trong suốt */
+            filter: blur(15px); /* Làm mờ */
+        }
+
+        .dot1 {
+            width: 150px;
+            height: 150px;
+            top: 20%;
+            left: 30%;
+        }
+
+        .dot2 {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 70%;
+        }
+
+        .dot3 {
+            width: 100px;
+            height: 100px;
+            top: 80%;
+            left: 40%;
+        }
+
+        /* Phần style cho đoạn bạn đưa vào */
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .info-box {
+            max-width: 600px;
+        }
+
+        .text h1 {
+            font-size: 48px;
+        }
+
+        .Developer {
+            font-size: 24px;
+            color: gray;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .socials a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: #000;
+        }
+
+        .socials a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nền đốm mờ -->
+    <div class="background-dots">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+    </div>
+
+    <!-- Nội dung của bạn -->
+    <div class="row section-light">
+        <div class="col-md-12">
+            <section id="about" class="about">
+                <div class="about-container">
+                    <div class="info-box">
+                        <div class="text">
+                            <div class="online-status mb-2">
+                                <span class="online-dot"></span>
+                                <p style="margin-bottom: 0 !important;">Online.</p>
+                            </div>
+                            <div class="text-hello">
+                                <h3>Hello, I'm</h3>
+                            </div>                            
+                            <h1>Nguyen Dang Phat</h1>
+                            <span class="Developer">Frontend Developer</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="/Source/File/TESTFILE.docx">
+                                <div class="btn">Download CV</div>
+                            </a>
+                           <a href="https://zalo.me/0379157360" target="_blank">
+                            <div class="btn">Contact (Zalo)</div>
+                           </a>
+                        </div>
+                        <div class="socials">
+                            <a href="https://gitlab.com/nguyenphat006" target="_blank"><i class="fa-brands fa-gitlab"></i></a>
+                            <a href="https://github.com/nguyenphat006" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/nguyen-dang-phat-64440829a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <img src="Image/avatar2.jpg" alt="">
+                </div>
+            </section>
+        </div>  
+    </div>
+
+</body>
+</html>

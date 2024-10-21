@@ -7,6 +7,13 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+
+body {
+    height: 100%;
+    background-color: white;
+    position: relative;
+    overflow-x: hidden; /* Ngăn cuộn ngang nếu đốm màu vượt ra ngoài */
+}
 .row{
     margin: 0 !important;
 }
@@ -537,6 +544,45 @@ footer ul li a{
 ul{
     padding-left: 0;
 }
+
+/* BACKGROUND */
+/* Nền với các đốm màu mờ giữ cố định khi scroll */
+.background-dots {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1; /* Đặt nền phía sau nội dung */
+    overflow: hidden;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px); /* Làm mờ */
+}
+
+/* Vị trí và kích thước các đốm màu */
+.dot1 {
+    width: 500px;  /* Tăng kích thước */
+    height: 500px; /* Tăng kích thước */
+    top: 20%;
+    left: 70%;
+    background-color: rgba(255, 106, 0, 0.3); /* Màu cam (orange) */
+}
+
+.dot2 {
+    width: 500px;  /* Tăng kích thước */
+    height: 500px; /* Tăng kích thước */
+    top: 50%;
+    right: 70%;
+    background-color: rgba(212, 38, 212, 0.3); /* Màu tím (purple) */
+}
+
+
+
 
 @media(max-width: 1280px){
     header{
