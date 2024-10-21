@@ -385,16 +385,6 @@ section{
 .mini-card + .mini-card {
     margin-left: 15px; /* Khoảng cách giữa các card */
 }
-
-
-
-
-
-
-
-
-
-
 .experience-info{
     display: flex;
     align-items: center;
@@ -489,7 +479,7 @@ section{
 }
 .project-info > div > span:first-child {
     font-weight: bold;
-  }
+}
 .input-box{
     display: flex;
     flex-direction: column;
@@ -587,6 +577,7 @@ ul{
     font-size: 1rem;  /* Tăng kích thước font */
     line-height: 1.5;
     height: auto;  /* Cho phép chiều cao tự điều chỉnh */
+    box-shadow: none;
 }
 
 .contact-form-wrapper input.form-control {
