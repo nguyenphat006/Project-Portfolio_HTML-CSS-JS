@@ -6,6 +6,7 @@
     text-decoration: none !important;
     scroll-behavior: smooth;
     list-style: none;
+    font-display: swap;
 }
 
 body {
@@ -14,9 +15,9 @@ body {
     position: relative;
     overflow-x: hidden; /* Ngăn cuộn ngang nếu đốm màu vượt ra ngoài */
 }
-.row{
+/* .row{
     margin: 0 !important;
-}
+} */
 header{
     position: fixed;
     top: 1rem;
@@ -581,9 +582,61 @@ ul{
     background-color: rgba(212, 38, 212, 0.3); /* Màu tím (purple) */
 }
 
+.contact-form-wrapper .form-control {
+    padding: 0.75rem 1rem;  /* Tăng padding */
+    font-size: 1rem;  /* Tăng kích thước font */
+    line-height: 1.5;
+    height: auto;  /* Cho phép chiều cao tự điều chỉnh */
+}
 
+.contact-form-wrapper input.form-control {
+    height: 3rem;  /* Chiều cao cố định cho input */
+}
 
+.contact-form-wrapper textarea.form-control {
+    min-height: 150px;  /* Chiều cao tối thiểu cho textarea */
+}
 
+.contact-form-wrapper .btn {
+    padding: 0.75rem 2rem;  /* Tăng kích thước nút */
+    font-size: 1rem;
+}
+
+.btn-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-send:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .btn-text {
+    margin-right: 8px;
+  }
+  
+  .btn-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-send:hover .btn-icon {
+    transform: translateX(4px);
+  }
 @media(max-width: 1280px){
     header{
         gap: 2rem;
