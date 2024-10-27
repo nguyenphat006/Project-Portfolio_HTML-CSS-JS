@@ -28,7 +28,7 @@ header{
     align-items: center;
     gap: 5rem;
     background-color: rgba(0,0,0,0.8);
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
     color: #fff;
     padding: 0.5rem 3.5rem;
     border-radius: 3rem;
@@ -41,7 +41,7 @@ header img{
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
-    text-wrap: nowrap;
+    /* text-wrap: nowrap; */
     transition: 0.3s ease-in-out;
 }
 .logo:hover{
@@ -630,10 +630,13 @@ ul{
   }
 
 
-.wrapper img{
-    height: 45px;
+.wrapper img {
+    width: 155px; /* Đặt cùng chiều rộng */
+    height: 155px; /* Đặt cùng chiều cao */
+    object-fit: contain; /* Đảm bảo hình ảnh không bị cắt mất */
     margin: 0 auto;
 }
+
 .item{
     display: flex;
     align-items: center;
@@ -650,13 +653,13 @@ ul{
   height: 100px;
   position: relative;
   overflow: hidden;
-  mask-image: linear-gradient(
+  /* mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 1) 80%,
     rgba(0, 0, 0, 0)
-  );
+  ); */
 }
 
 @keyframes scrollLeft {
@@ -673,9 +676,6 @@ ul{
 
 .itemLeft,
 .itemRight {
-  /* width: 200px;
-  height: 100px;
-  background-color: #414347; */
   border-radius: 6px;
   position: absolute;
   animation-timing-function: linear;
