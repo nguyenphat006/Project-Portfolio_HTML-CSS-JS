@@ -40,6 +40,17 @@
     <script src="Assets/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> 
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "YfjQWlrERbAxl7LFo",
+        });
+    })();
+    </script>
 </head>
 <body>
     <div class="background-dots">   
@@ -111,7 +122,7 @@
                 <div class="section-title mb-3" data-aos="fade-up" data-aos-delay="100">
                     <h2>Resume</h2>
                     <p>
-                        I have 7 months of experience in developing user interfaces (Frontend) using HTML, CSS, and Javascript, primarily focusing on redesigning and optimizing websites based on existing projects. I am also skilled in UI/UX design, using tools like Adobe Photoshop and Figma to prototype and improve user experience. 
+                        I have 8 months of experience in developing user interfaces (Frontend) using HTML, CSS, and Javascript, primarily focusing on redesigning and optimizing websites based on existing projects. I am also skilled in UI/UX design, using tools like Adobe Photoshop and Figma to prototype and improve user experience. 
                         Additionally, I have worked on backend features using .NET Core API and SQL Server, including creating StoreProcedures and Tables. 
                         I also have experience in project deployment and handover, along with communication and technical guidance skills during the handover process.
                     </p>
@@ -136,12 +147,22 @@
                               <div class="timeline-4 right-4">
                                 <div class="card gradient-custom" data-aos="fade-left" data-aos-delay="700">
                                     <div class="card-body p-4">
-                                      <h4 class="mb-0"><img src="Image/fpt-logo.png" alt="">FPT POLYTECHNIC</h4>
-                                      <p class="small mb-4">08/2021 - 08/2025</p>
-                                      <li>Average: <strong>9.1 Point</strong></li>
+                                      <h4 class="mb-0"><img src="Image/fpt-logo.png" alt="">FPT POLYTECHNIC (High School College)</h4>
+                                      <p class="small mb-4">08/2021 - 03/2024 | Software Development</p>
+                                      <li><strong>Graduated with Distinction</strong></li>
+                                      <li>GPA: <strong>9.1/10</strong></li>  
                                       <p>During my studies, I worked with .NET, HTML, CSS, 
-                                          JavaScript, and Vue.js. I learned to build dynamic web applications with .NET.
-                                      </p>    
+                                        JavaScript, and Vue.js. I learned to build dynamic web applications with .NET Core.
+                                    </p>  
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="timeline-4 right-4">
+                                <div class="card gradient-custom" data-aos="fade-left" data-aos-delay="700">
+                                    <div class="card-body p-4">
+                                      <h4 class="mb-0"><img src="Image/fpt-logo.png" alt="">FPT POLYTECHNIC</h4>
+                                      <p class="small mb-4">08/2024 - 08/2025 | Software Development</p>
+                                      <li><strong>Expect Graduation: </strong>08/2025</li> 
                                     </div>
                                   </div>
                               </div>
@@ -149,8 +170,8 @@
                                 <div class="card gradient-custom" data-aos="fade-right" data-aos-delay="700">
                                     <div class="card-body p-4">
                                       <h4 class="mb-3"><img src="Image/logo-1.png" alt="" style="height: 30px;">HIDAY SOFTWARE COMPANY</h4>
-                                      <p class="small mb-4">03/2024 - Now</p>
-                                      <p>First Job As Frontend Developer . I worked on redesigning and optimizing websites based on existing projects. I also worked on backend features
+                                      <p class="small mb-4">03/2024 - 10/2024</p>
+                                      <p>As an intern, I gained experience in various roles, primarily focusing on Frontend development. I utilized .NET Core MVC and APIs for web applications, applying my skills in HTML5, CSS3, JavaScript, and jQuery to create user interfaces. This role enhanced my design capabilities and understanding of Frontend-Backend integration.
                                       </p>    
                                       <h6 class="badge bg-body-tertiary text-black mb-0">Intern</h6>
                                       <h6 class="badge bg-body-tertiary text-black mb-0">Current</h6>
@@ -166,7 +187,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <section class="skill" id="skill" style="padding-top: 0;" data-aos="fade-up" data-aos-duration="1000">
+            <section class="skill" id="skill" style="padding-top: 0; padding-bottom: 0;" data-aos="fade-up" data-aos-duration="1000">
                 <div class="section-title">
                     <h2>Skills</h2>
                 </div>               
@@ -196,7 +217,7 @@
                         <img src="Img-sgv/sql.png" alt="" style="width: 170px;">
                     </div>
                 </div>
-                <div class="wrapper">
+                <!-- <div class="wrapper">
                     <div class="itemRight item1 item">
                         <img src="Img-sgv/bootstrap.png" alt="">
                     </div>
@@ -221,50 +242,49 @@
                     <div class="itemRight item8 item">
                         <img src="Img-sgv/sql.png" alt="" style="width: 170px;">
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
     </div>
     
 
-    <section class="experience" id="experience" data-aos="fade-up" data-aos-duration="1000">
+    <section class="experience" id="experience" data-aos="fade-up" data-aos-duration="1000" style="padding-top: 0;">
         <div class="section-title">
-            <h2>Experience</h2>
+            <h2>experience</h2>
         </div>
         <div class="project-grid">
             <div class="project-card" data-aos="zoom-in-left" data-aos-duration="1000">
                 <img src="Image/ebookpj.png" alt="">
-                <h3>Project Ebook Online</h3>
+                <h3>Ebook Online</h3>
                 <div class="project-info">
                   <div class="role">
                     <span>Role:</span>
                     <span>Full-stack Developer</span>
                   </div>
-                  <div class="framework">
+                  <!-- <div class="framework">
                     <span>Framework:</span>
                     <span>ASP.Net Core 6 MVC, Web API, Entity Framework</span>
-                  </div>
+                  </div> -->
                   <div class="technology">
                     <span>Technology:</span>
-                    <span>C#, HTML5, CSS3, JavaScript</span>
+                    <span>ASP .NET Core 6 MVC & API, C#, HTML5, CSS3, JavaScript, Jquery.</span>
                   </div>
                   <div class="description">
-                    <span>Description:</span>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Qui facere iusto reiciendis voluptates hic libero 
-                        ab repellendus minus accusamus voluptatibus eum rerum 
-                        modi molestiae expedita.
+                    <span>Responsibilities:</span>
+                    <span>Developed and refined the user interface using HTML5, CSS3, and JavaScript, ensuring a modern and optimized user experience.
+                        Designed website UI/UX using Figma and basic Adobe Photoshop.
+                        Built APIs according to functional requirements.
                     </span>
                   </div>
                 </div>
                 <div class="btn-group">
-                  <div class="btn">Live Demo</div>
+                    <a href="https://mybook.sjob.vn/" target="_blank"><div class="btn" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">Live Demo</div></a>
                   <div class="btn">Github Repo</div>
                 </div>
               </div>
             <div class="project-card" data-aos="zoom-in-left" data-aos-duration="1100">
                 <img src="Image/project-2.png" alt="">
-                <h3>Project Y</h3>
+                <h3>Project Null</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Qui facere iusto reiciendis voluptates hic libero 
                     ab repellendus minus accusamus voluptatibus eum rerum 
@@ -277,7 +297,7 @@
             </div>
             <div class="project-card" data-aos="zoom-in-left" data-aos-duration="1200">
                 <img src="Image/project-3.png" alt="">
-                <h3>Project Z</h3>
+                <h3>Project Null</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Qui facere iusto reiciendis voluptates hic libero 
                     ab repellendus minus accusamus voluptatibus eum rerum 
@@ -338,23 +358,33 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <div class="contact-form-wrapper p-4 border rounded-3 shadow-sm bg-white">
-                        <form>
+                        <form onsubmit="event.preventDefault(); SendMail();">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name*" autocomplete="off">
+                                    <input id="name" type="text" class="form-control" placeholder="Your Name*" autocomplete="off">
+                                    <span class="error-message" id="name-error"></span>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Your Email*">
+                                    <input id="email" type="email" class="form-control" placeholder="Your Email*">
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input id="phone" type="text" class="form-control" placeholder="Your Phone*">
+                                    <span class="error-message" id="phone-error"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input id="subject" type="text" class="form-control" placeholder="Subject*">
+                                    <span class="error-message" id="subject-error"></span>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject*">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                <span class="error-message" id="message-error"></span>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button class="btn-send">
+                                <button type="submit" class="btn-send">
                                     <span class="btn-text">Send Message</span>
                                     <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -368,6 +398,8 @@
             </div>
         </div>
     </section>
+    
+    
     <footer>
         <ul>
             <li>

@@ -8,7 +8,9 @@
     list-style: none;
     font-display: swap;
 }
-
+.error-message{
+    color: red;
+}
 body {
     height: 100%;
     background-color: white;
@@ -235,7 +237,7 @@ section{
 
 .section-title p {
     margin-bottom: 0;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 
