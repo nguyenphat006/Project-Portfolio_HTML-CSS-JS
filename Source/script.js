@@ -81,6 +81,7 @@ function SendMail() {
         .then(function(response) {
             alert("Email đã được gửi thành công.");
             location.reload();
+            window.scrollTo(0, 0);
         })
         .catch(function(error) {
             alert("Không thể gửi email: " + error);
